@@ -135,7 +135,7 @@
                         <span>03</span>
                         <div>
                             <h3>Send Your Enquiry</h3>
-                            <p>Complete the sample reservation form.</p>
+                            <p>Complete the reservation enquiry form.</p>
                         </div>
                     </div>
 
@@ -158,12 +158,40 @@
                         <p class="eyebrow">PLAN YOUR EXPERIENCE</p>
                         <h2>Reservation Enquiry</h2>
                         <p>
-                            Complete the details below to demonstrate
-                            a restaurant reservation enquiry.
+                            Complete the details below to send
+                            your restaurant reservation enquiry.
                         </p>
                     </div>
 
-                    <form class="contact-form-premium" action="#" method="get">
+                    <!-- Working Email Enquiry Form -->
+                    <form
+                        class="contact-form-premium"
+                        action="https://formsubmit.co/skylightalucard@gmail.com"
+                        method="POST"
+                    >
+
+                        <!-- Email Settings -->
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="New Reservation Enquiry - NAKKO Kitchen"
+                        >
+
+                        <!-- Redirect to Contact Page Footer -->
+                        <input
+                            type="hidden"
+                            name="_next"
+                            value="https://narresh3105.github.io/nakko-kitchen/contact.html#footer"
+                        >
+
+                        <!-- Spam Protection -->
+                        <input
+                            type="text"
+                            name="_honey"
+                            style="display:none"
+                            tabindex="-1"
+                            autocomplete="off"
+                        >
 
                         <div class="form-field">
                             <label for="customer-name">Full Name</label>
@@ -181,7 +209,7 @@
                             <input
                                 type="email"
                                 id="customer-email"
-                                name="customer-email"
+                                name="email"
                                 placeholder="Enter your email address"
                                 required
                             >
@@ -218,14 +246,14 @@
                                     required
                                 >
                                     <option value="">Select time</option>
-                                    <option value="11:00">11:00 AM</option>
-                                    <option value="12:00">12:00 PM</option>
-                                    <option value="13:00">1:00 PM</option>
-                                    <option value="14:00">2:00 PM</option>
-                                    <option value="18:00">6:00 PM</option>
-                                    <option value="19:00">7:00 PM</option>
-                                    <option value="20:00">8:00 PM</option>
-                                    <option value="21:00">9:00 PM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
                                 </select>
                             </div>
 
@@ -263,8 +291,8 @@
                         </button>
 
                         <p class="form-note-premium">
-                            Student project demonstration only.
-                            This form does not send or save reservations.
+                            Your enquiry will be sent to our team.
+                            We look forward to hearing from you.
                         </p>
 
                     </form>
@@ -292,7 +320,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
         <div class="footer-main">
 
             <div>
